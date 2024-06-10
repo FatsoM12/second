@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: ghostwhite;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        html,body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            margin:15px;
+            border: 1px solid black ;
+            border-radius: 5px;
+        }
+        input[type="radio"]{
+            display:none;
+        }
+        label{
+            display: block;
+            padding:10px;
+            border-bottom: 1px solid black;
+            color: rgb(129, 130, 179);
+            background: #f8fafd;
+        }
+.accordion:last-child>label, .accordion:last-child> .accordion-content{
+    border: none;
+}
+.accordion-content{
+    border-bottom: 1px solid black;
+    padding: 15px;
+    display: none;
+}
+input:checked~.accordion-content{
+    display: block;
+}
+.design{
+   
+    font-size: large;
+    text-align: center;
+           
+            background: linear-gradient(115deg, #fc949b, #9db6ea);
+            height: 280px;
+           
+}
+button{
+    padding:5px 7px;
+    background: ghostwhite;
+    border: none;
+}
+.withImg{
+    text-align: center;
+    font-size: large; 
+    background: linear-gradient(115deg, #fc949b, #9db6ea);
+            height: 600px;
+           
+            text-align: center;
+            
+}
+img{
+    max-width: 400px;
+}
+.submit{
+    text-align: center;
+    font-size: large; 
+    background: linear-gradient(115deg, #fc949b, #9db6ea);
+            height: 250px;
+           
+            text-align: center;
+           
+}
+input{
+    padding: 5px 7px;
+    background: ghostwhite;
+    border: none;
+
+}
+h2{
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+   <div class="design">
+    <h1>Web design</h1>
+  
+    <ul>
+        <li>Basic</li>
+        <li>3 months</li>
+        <li>Wed, Fri 6PM </li>
+        <li>R8 000</li>
+    </ul>
+    <button onclick="consultButton()">Get consultation</button>
+    <br>
+    
+   </div>
+   <br>
+   <p >
+    <div class="withImg">
+    <strong style="font-size: larger; font-weight: bolder;">Who might be interested:</strong>
+   <br>
+   <ul>
+    <li>You want to learn the profession of a designer, and photoshop and illustrator will become an indispensablespringboardfor your career growth.</li>
+  <br>
+  <li>You are self-taught and you want to streamline and uodate the skills</li>
+  <br>
+  <li>You have a hobby(photography, blogging, etc.) that requires skills in geaphic editors.</li>
+<br>
+<img src="code2.jpg" >
+</ul>
+</div>
+</p> 
+<h2>Course Program</h2>
+<br>
+<div class="container">
+    <div class="accordion">
+        <input type="radio" name="accordion" id="accordion1">
+        <label for="accordion1">Introduction and features on adobe photoshop. Creating and saving files.</label><div class="accordion-content">
+            First steps in Adobe photoshop.Introduction, tasks that this program can solve. Learning to create and save filesin different formats.
+        </div>
+    </div>
+    <div class="accordion">
+        <input type="radio" name="accordion" id="accordion2">
+        <label for="accordion1">Work with layers.
+            Selection tools.
+        </label><div class="accordion-content">
+            It would be completely reasonable to start leraning Photoshop from the most basic- with the concept of layers and their interaction, since this was  once the hallmark of of Photoshop and is still an indispensable feature of the program. Without a full-fledged ability to use layers and their options, there is no point in moving further in mastering. 
+        </div>
+    </div>
+    <div class="accordion">
+        <input type="radio" name="accordion" id="accordion3">
+        <label for="accordion1">Animation. Creating simple objects and transforming them.</label><div class="accordion-content">
+           Frame by frame animation, Parallax effect. How to add, delete and edit key animation frames. What is the tween button for (Create intermediate frames). How to optimize the animation to reduce the size of the GIF-file.
+        </div>
+    </div>
+    <div class="accordion">
+        <input type="radio" name="accordion" id="accordion4">
+        <label for="accordion1">Work with text and mock-up.</label><div class="accordion-content">
+            Horizontal Type Tool, Vertical Type Tool. Text effects. Fonts. Creating mockup and changing elements
+        </div>
+    </div>
+    <div class="accordion">
+        <input type="radio" name="accordion" id="accordion5">
+        <label for="accordion1">
+            Adobe Illustrator workspace. Basic document operations.
+        </label><div class="accordion-content">
+         Basic tools within the program, How to create basic elements in Adobe Illustrator. How to work with vector graphics. 
+        </div>
+    </div>
+</div>
+<div class="submit">
+    <h2>Apply for the course</h2>
+    <p>
+     Fill out the form below and pre-register for the web design course. We will contact you soon to clear all the details.
+
+    </p>
+    <input type="text" placeholder="Enter your full name....." required>
+    <br>
+    <input type="number" placeholder="Enter your phone number....." required>
+    <br>
+    <input type="email" name="" id="email" placeholder="Email*" required>
+    <br>
+    <input type="submit" value="Submit" onclick="submitButton()">
+</div>
+<script>
+    function submitButton(){
+       alert("Thank you!");
+       alert(" We will contact you shortly!")
+       
+    }
+    function consultButton(){
+        window.location.href="apply.html"
+    }
+</script>
+</body>
+</html>

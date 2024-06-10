@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: ghostwhite;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+       .consult{
+        background-image: url('4-27.jpg');
+        background-image: 100px;
+        height: 290px;
+        width: 995px;
+       } 
+       button{
+       padding: 5px 7px;
+       }
+      .get{
+        border:2px solid red;
+        color: red;
+        background: white;;
+       border-radius: 4px;
+      } 
+      .reg{
+        color: white;
+        background: red;
+        border:1px solid red;
+        border-radius: 4px;
+      }
+      .schedule{
+        position: relative;
+        left: 30%;
+        background: white;
+        max-width: 600px;
+      }
+      img{
+        max-width: 400px;
+        border: 3px solid white;
+      }
+      .reserve{
+        height: 290px;
+        background: white;
+      }
+      input{
+        padding: 5px 7px;
+        background: ghostwhite;
+        border: none;
+        text-align: center;
+        font-size: medium;
+      }
+      .reserve{
+        width: 995px;
+      }
+    </style>
+</head>
+<body>
+    <div class="consult">
+        <h1 style="color: blue;">IT, Design and Misunderstandings</h1>
+        <br>
+        <ul>
+            <li>
+                14 August 2024
+            </li>
+            <li>
+                9AM-2PM
+            </li>
+            <li>
+                R400
+            </li>
+        </ul>
+        <br>
+        
+            <button class="get" onclick="consultButton()">Get consultation</button>
+        <br>
+        <br>
+        <button class="reg" onclick="reserveButton()">Register</button>
+    </div>
+    <p>
+        <div class="schedule">
+        <strong style="font-size: x-large;">Schedule of the Event</strong>
+        <br>
+        <br>
+        Joseph will discuss the following topics with us
+        <br>
+        <img src="joseph.jpg" >
+        <br>
+        <small style="color: red;">09:30-10:30</small>
+        <br>
+        <br>
+        <strong style="color:blue; font-size: x-large;">Intro</strong>
+        <br>
+        <br>
+        What is the sense of mutual understanding, where does misunderstanding come from?
+        <br>
+        <br>
+        <img src="speaker.jpg" >
+        <br>
+        <small style="color: red;">10:30-11:20</small>
+        <br>
+        <br>
+        <Strong style="color:blue; font-size: x-large;">How to communicate properly?</Strong>
+        <br>
+        <br>
+        What requirements do you need to to set yourself for proper communication?
+        <br>
+        <br>
+        <img src="women.jpg" >
+        <br>
+        <small style="color: red;">11:30-13:00</small>
+        <br>
+        <br>
+        <strong style="color:blue; font-size: x-large;">Communication "live"</strong>
+        <br>
+        <br>
+        How to organize the exchange of information in any combination of designer-programmer-manager-client?
+        <br>
+        <br>
+        <img src="code.jpg" >
+        <br>
+        <small style="color: red;">13:00-14:00</small>
+        <br>
+        <br>
+        <strong style="color:blue; font-size: large;">A few tricks</strong>
+        <br>
+        <br>
+        Some life hacks, how to smooth out "sharp corners" and resolve conflict situations. Discussing the questions from the audience.
+    </div>
+    </p>
+    <br>
+    <p>
+        <div class="reserve" id="reserve">
+        <strong style="font-size: x-large;">Reserve a place!</strong>
+        <br>
+        <br>
+        Fill out the form to register for the event. We will contact you soon.
+        <br>
+        <br>
+        <input type="text" placeholder="Enter your full name.....">
+        <br>
+        <br>
+        <input type="number" placeholder="Enter your phone number.....">
+        <br>
+        <br>
+        <input type="email" placeholder="Enter your e-mail.....">
+        <br>
+        <br>
+        <button class="reg" onclick="requestButton()">Send a request</button>
+    </div>
+    </p>
+    <script>
+        function requestButton(){
+            alert("We will contact you shortly")
+        }
+        function consultButton(){
+            window.location.href="apply.html"
+        }
+        function reserveButton()
+        {
+            window.location.href("details.html")
+        }
+
+    </script>
+</body>
+</html>

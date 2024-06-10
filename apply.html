@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background:ghostwhite;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h1{
+            text-align: center;
+        }
+        .where{
+            text-align: center;
+            position: relative;
+            left: 33%;
+            background: linear-gradient(115deg, #fc949b, #9db6ea);
+            height: 140px;
+            max-width: 500px;
+        }
+        .call{
+            text-align: center;
+            position: relative;
+            left: 33%;
+            background: linear-gradient(115deg, #fc949b, #9db6ea);
+            height: 140px;
+            max-width: 500px;
+        }
+        .write{
+            text-align: center;
+            position: relative;
+            left: 33%;
+            background: linear-gradient(115deg, #fc949b, #9db6ea);
+            height: 140px;
+            max-width: 500px;
+        }
+        .request{
+            text-align: center;
+            position: relative;
+            left: 33%;
+            background: linear-gradient(115deg, #fc949b, #9db6ea);
+            height: 240px;
+            max-width: 500px;
+        }
+        strong{
+            font-size: larger;
+        }
+        button{
+            background: ghostwhite;
+            border: none;
+            padding: 5px 7px;
+        }
+        input{
+            max-width: 500px;
+            padding: 5px 7px;
+            background: ghostwhite;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <p>
+        <div class="where">
+            <strong>Where we are</strong>
+            <br>
+            73-01 2nd Ave, BLM 9301,
+           SA
+        </div>
+        <br>
+        <div class="call">
+            <br>
+<strong>Call us</strong>
+<br>
+051 239 3855
+
+        </div>
+        <br>
+        <div class="write">
+            <strong>Write us</strong>
+            uacademy@gmail.com
+        </div>
+    </p>
+    <div class="request">
+        <p>
+        <br>
+        <input type="text" placeholder="Enter your full name....." required>
+        <br>
+        <br>
+        <input type="number" placeholder="Enter your phone number....." required>
+        <br>
+        <br>
+        <input type="email" placeholder="Enter your e-mail....." required>
+        <br>
+        <br>
+        <input type="text" placeholder="Type your message....." class="message">
+        <br>
+        <br>
+        <button onclick="sendButton()" >Send a request</button>
+    </p>
+    </div>
+    <script>
+        function sendButton(){
+            alert("Thank you!, we will contact you shortly")
+        }
+    </script>
+</body>
+</html>
